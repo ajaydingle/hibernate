@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD//EN" 
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.example.entities.Employee" table="EMPLOYEE">
+			<id name="id" column="id" type="int">
+				<generator class="native">
+					<param name="sequence">HIBERNATE_SEQUENCE</param>
+				</generator>
+			</id>
+			<property name="name" column="NAME" type="string" />
+			<property name="age" column="AGE" type="string" />
+			<property name="dob" column="DOB" type="string" />
+			<property name="gender" column="GENDER" type="string" />
+			<property name="city" column="CITY" type="string" />
+			<property name="email" column="EMAIL" type="string" />
+	</class>
+</hibernate-mapping>
